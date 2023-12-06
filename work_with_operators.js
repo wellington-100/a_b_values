@@ -16,21 +16,17 @@ alert(
     "\n########   FOOD  ########"
 )
 
-
 food_1_quantity = parseInt( prompt(`How many "${food_1_name}" do you want?`) )
 food_2_quantity = parseInt( prompt(`How many "${food_2_name}" do you want?`) )
 food_3_quantity = parseInt( prompt(`How many "${food_3_name}" do you want?`) )
 food_4_quantity = parseInt( prompt(`How many "${food_4_name}" do you want?`) )
-
 
 cost_1 = food_1_price * food_1_quantity
 cost_2 = food_2_price * food_2_quantity
 cost_3 = food_3_price * food_3_quantity
 cost_4 = food_4_price * food_4_quantity
 
-
 total = cost_1 + cost_2 + cost_3 + cost_4
-total.toFixed(2)
 var free_delivery = total > 200 ? true : false;
 
 alert(
